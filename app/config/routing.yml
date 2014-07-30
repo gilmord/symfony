@@ -1,0 +1,27 @@
+genemu_upload:
+    resource: "@GenemuFormBundle/Resources/config/routing/upload.xml"
+
+genemu_image:
+    resource: "@GenemuFormBundle/Resources/config/routing/image.xml"
+
+bash_nodes:
+    resource: "@BashNodesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bash_user:
+    resource: "@BashUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bash_bash:
+    resource: "@BashBashBundle/Resources/config/routing.yml"
+    prefix:   /
+
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+

@@ -1,0 +1,7 @@
+parameters:
+#    bash_bash.example.class: Bash\BashBundle\Example
+
+services:
+    bash_bash.example:
+      class: Bash\BashBundle\Twig\BashExtensionExample
+

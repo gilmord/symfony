@@ -1,0 +1,17 @@
+{% block javascripts %}
+    <script src="{{ asset('js/jquery-1.7.min.js') }}"></script>
+    <script src="{{ asset('tinymce/jquery.tinymce.js') }}"></script>
+
+    {{ form_javascript(form) }}
+{% endblock %}
+
+<form action="{{ path('BashBashBundle_comment_create', { 'id' : comment.blogid.id } ) }}" method="post" {{ form_enctype(form) }} >
+    {{ form_widget(form) }}
+    <p>
+    <div id="edit-actions" class="form-actions form-wrapper">
+
+        <input id="edit-submit" class="form-submit" type="submit" value="Save" name="op">
+
+    </div>
+    </p>
+</form>

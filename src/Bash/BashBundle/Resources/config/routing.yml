@@ -1,0 +1,78 @@
+# src/Bash/BashBundle/Resources/config/routing.yml
+BashBashBundle_recent:
+    pattern:  /{id}
+    defaults: { _controller: BashBashBundle:Page:recent }
+    requirements:
+        _method:  GET
+        id: \d+
+
+BashBashBundle_best:
+    pattern:  /best
+    defaults: { _controller: BashBashBundle:Page:best }
+    requirements:
+        _method:  GET
+
+BashBashBundle_rss:
+    pattern:  /rss
+    defaults: { _controller: BashBashBundle:Page:rss }
+    requirements:
+        _method:  GET
+
+BashBashBundle_random:
+    pattern:  /random
+    defaults: { _controller: BashBashBundle:Page:random }
+    requirements:
+        _method:  GET
+
+BashBashBundle_govnokod:
+    pattern:  /govnokod
+    defaults: { _controller: BashBashBundle:Page:govnokod }
+    requirements:
+        _method:  GET
+
+BashBashBundle_addquote:
+    pattern:  /add_quote
+    defaults: { _controller: BashBashBundle:Page:addquote }
+    requirements:
+        _method:  POST|GET
+
+BashBashBundle_addcode:
+    pattern:  /add code
+    defaults: { _controller: BashBashBundle:Page:addcode }
+    requirements:
+        _method:  GET
+
+BashBashBundle_myquotes:
+    pattern:  /myquotes
+    defaults: { _controller: BashBashBundle:Page:myquotes }
+    requirements:
+        _method:  GET
+
+BashBashBundle_post:
+    pattern:  /node/{id}
+    defaults: { _controller: BashBashBundle:Page:post }
+    requirements:
+        _method:  POST|GET
+        id: \d+
+
+
+BashBashBundle_comment_create:
+    pattern:  /comment/{id}
+    defaults: { _controller: BashBashBundle:Comment:create }
+    requirements:
+        _method:  POST|GET
+        blog_id: \d+
+
+BashBashBundle_quote_create:
+    pattern:  /quote/{id}
+    defaults: { _controller: BashBashBundle:Quote:create }
+    requirements:
+        _method:  POST|GET
+        blog_id: \d+
+
+
+
+
+
+
+

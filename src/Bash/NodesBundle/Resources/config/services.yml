@@ -1,0 +1,4 @@
+parameters:
+#    bash_nodes.example.class: Bash\NodesBundle\Example
+
+services:
