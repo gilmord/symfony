@@ -8,9 +8,7 @@ bash_nodes:
     resource: "@BashNodesBundle/Resources/config/routing.yml"
     prefix:   /
 
-bash_user:
-    resource: "@BashUserBundle/Resources/config/routing.yml"
-    prefix:   /
+
 
 bash_bash:
     resource: "@BashBashBundle/Resources/config/routing.yml"

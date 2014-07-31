@@ -1,7 +1,7 @@
 <?php
+// src/Acme/UserBundle/Entity/User.php
 
-
-namespace Bash\UserBundle\Entity;
+namespace Bash\BashBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
@@ -19,9 +19,19 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $name;
+
+    /**
+     * @ORM\Column(type="string", length=25)
+     */
+    protected $pass;
+
     public function __construct()
     {
         parent::__construct();
 
-   }
+    }
 }

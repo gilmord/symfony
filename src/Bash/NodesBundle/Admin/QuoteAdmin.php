@@ -26,7 +26,7 @@ class QuoteAdmin extends Admin
 
           ->add('author')
           ->add('subject')
-
+           ->add('file', 'file',['required' => false])
         ;
     }
 
@@ -41,8 +41,7 @@ class QuoteAdmin extends Admin
 
           ->add('author')
           ->add('subject')
-
-        ;
+          ->add('image');
     }
 
     /**
@@ -53,18 +52,24 @@ class QuoteAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
+
           ->addIdentifier('id')
           ->add('author')
           ->add('subject')
-          ->add('_action', 'actions', array(
+          ->add('image')
+          ->add(
+            '_action',
+            'actions',
+            array(
               'actions' => array(
                 'show' => array(),
                 'edit' => array(),
                 'delete' => array(),
               )
-            ))
-        ;
+            )
+          );
     }
+
     /**
      * @param \Sonata\AdminBundle\Datagrid\DatagridMapper $datagridMapper
      *
@@ -75,12 +80,12 @@ class QuoteAdmin extends Admin
         $datagridMapper
           ->add('id')
           ->add('author')
-          ->add('created')
-        ;
+          ->add('created');
     }
+
     // setup the default sort column and order
     protected $datagridValues = array(
-      '_sort_order' => 'ASC',
+      '_sort_order' => 'DESC',
       '_sort_by' => 'id'
     );
 }

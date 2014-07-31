@@ -19,9 +19,75 @@ class User extends BaseUser
      */
     protected $id;
 
-     public function __construct()
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $name;
+
+    /**
+     * @ORM\Column(type="string", length=25)
+     */
+    protected $pass;
+
+    public function __construct()
     {
         parent::__construct();
-                // your own logic
+
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return User
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set pass
+     *
+     * @param string $pass
+     * @return User
+     */
+    public function setPass($pass)
+    {
+        $this->pass = $pass;
+
+        return $this;
+    }
+
+    /**
+     * Get pass
+     *
+     * @return string 
+     */
+    public function getPass()
+    {
+        return $this->pass;
     }
 }

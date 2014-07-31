@@ -2,7 +2,7 @@
 // src/Blogger/BlogBundle/Entity/Blog.php
 
 namespace Bash\NodesBundle\Entity;
-
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
@@ -40,11 +40,37 @@ class Quote
     protected $path;
 
     /**
+     * @ORM\Column(type="string", length=20, nullable=true)
+     */
+    protected $image;
+
+    /**
      * @var string
      */
     protected $file;
 
+    /**
+     * Get image
+     *
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
 
+    /**
+     * Set image
+     *
+     * @param string $image
+     * @return Quote
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
 
     /**
      * @ORM\Column(type="datetime")
@@ -198,6 +224,138 @@ class Quote
     public function __toString()
     {
         $string = (string) $this->getId();
+
+
         return $string;
     }
+
+
+    /**
+     * Get file.
+     *
+     * @return UploadedFile
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+
+    /**
+     * Sets file.
+     *
+     * @param UploadedFile $file
+     */
+    public function setFile(UploadedFile $file = null)
+    {
+        $this->file = $file;
+    }
+
+    public function getAbsolutePath()
+    {
+        return null === $this->path
+          ? null
+          : $this->getUploadRootDir().'/'.$this->path;
+    }
+
+    public function getWebPath()
+    {
+        return null === $this->path
+          ? null
+          : $this->getUploadDir().'/'.$this->path;
+    }
+
+    protected function getUploadRootDir()
+    {
+        // the absolute directory path where uploaded
+        // documents should be saved
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+    protected function getUploadDir()
+    {
+        // get rid of the __DIR__ so it doesn't screw up
+        // when displaying uploaded doc/image in the view.
+        return 'uploads/documents';
+    }
+
+    public function upload()
+    {
+        // the file property can be empty if the field is not required
+        if (null === $this->getFile()) {
+            return;
+        }
+
+        // use the original file name here but you should
+        // sanitize it at least to avoid any security issues
+
+        // move takes the target directory and then the
+        // target filename to move to
+        $this->getFile()->move(
+          $this->getUploadRootDir(),
+          $this->getFile()->getClientOriginalName()
+        );
+
+        // set the path property to the filename where you've saved the file
+        $this->path = $this->getFile()->getClientOriginalName();
+
+        // clean up the file property as you won't need it anymore
+        $this->file = null;
+    }
+
+
+//
+//    protected function getUploadDir()
+//    {
+//        //return 'uploads/blogs';
+//        return 'images';
+//    }
+//
+//    protected function getUploadRootDir()
+//    {
+//        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+//    }
+//
+//    public function getWebPath()
+//    {
+//        return null === $this->image ? null : $this->getUploadDir().'/'.$this->image;
+//    }
+//
+//    public function getAbsolutePath()
+//    {
+//        return null === $this->image ? null : $this->getUploadRootDir().'/'.$this->image;
+//    }
+//
+//    /**
+//     * @ORM\PrePersist
+//     */
+//    public function preUpload()
+//    {
+//        if (null !== $this->file) {
+//            // do whatever you want to generate a unique name
+//            $this->image = uniqid().'.'.$this->file->guessExtension();
+//        }
+//    }
+//
+//    /**
+//     * @ORM\PostPersist
+//     */
+//    public function upload()
+//    {
+//        if (null === $this->file) {
+//            return;
+//        }
+//        $this->file->move($this->getUploadRootDir(), $this->image);
+//
+//        unset($this->file);
+//    }
+//
+//    /**
+//     * @ORM\PostRemove
+//     */
+//    public function removeUpload()
+//    {
+//        if ($file = $this->getAbsolutePath()) {
+//            unlink($file);
+//        }
+//    }
 }

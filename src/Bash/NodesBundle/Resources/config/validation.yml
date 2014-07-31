@@ -1,0 +1,4 @@
+Bash\NodesBundle\Entity\Quote:
+    properties:
+        file:
+            - Image: ~

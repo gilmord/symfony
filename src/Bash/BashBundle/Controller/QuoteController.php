@@ -6,6 +6,7 @@ namespace Bash\BashBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Bash\NodesBundle\Entity\Quote;
 use Bash\NodesBundle\Form\QuoteType;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Comment controller.
@@ -33,8 +34,9 @@ class QuoteController extends Controller
         $form->submit($request->request->get($form->getName()));
 //
         if ($form->isValid()) {
-            $quote->setAuthor('Gabriel');
 
+            //$quote->upload();
+            $quote->setAuthor('Gabriel');
             $em = $this->getDoctrine()
               ->getManager();
 
@@ -46,11 +48,10 @@ class QuoteController extends Controller
          )));
         }
 
-        return $this->render('BashBashBundle:Quote:create.html.twig', array(
-            'quote' => $quote,
-            'form'    => $form->createView()
-          ));
+
 
     }
+
+
 
 }

@@ -16,9 +16,7 @@ class QuoteType extends AbstractType
     {
         $builder
             ->add('subject')
-            //->add('author')
-            //->add('path')
-            //->add('created')
+            ->add('file','file',['required' => false])
         ;
     }
     

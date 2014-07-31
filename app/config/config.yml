@@ -96,10 +96,6 @@ services:
 
 
 
-fos_user:
-    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
-    firewall_name: main
-    user_class: Bash\UserBundle\Entity\User
 
 sonata_admin:
     title: Bash Admin
@@ -114,3 +110,10 @@ sonata_block:
         sonata.block.service.text:
         sonata.block.service.action:
         sonata.block.service.rss:
+
+
+# app/config/config.yml
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: Acme\UserBundle\Entity\User
