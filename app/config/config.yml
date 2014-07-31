@@ -102,7 +102,8 @@ fos_user:
     user_class: Bash\UserBundle\Entity\User
 
 sonata_admin:
-    title: Symblog Admin
+    title: Bash Admin
+    #title_logo: /var/www/task/src/Bash/BashBundle/Resources/public/img/1.png
 
 sonata_block:
     default_contexts: [cms]

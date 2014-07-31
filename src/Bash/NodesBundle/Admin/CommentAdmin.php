@@ -10,9 +10,9 @@ use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\CoreBundle\Form\Type;
 use Sonata\AdminBundle\Show\ShowMapper;
 
-use Bash\NodesBundle\Entity\Quote;
+use Bash\NodesBundle\Entity\Comment;
 
-class QuoteAdmin extends Admin
+class CommentAdmin extends Admin
 {
 
     /**
@@ -24,10 +24,9 @@ class QuoteAdmin extends Admin
     {
         $formMapper
 
-          ->add('author')
-          ->add('subject')
-
-        ;
+          ->add('user')
+          ->add('comment')
+          ->add('blog_id');
     }
 
     /**
@@ -38,11 +37,10 @@ class QuoteAdmin extends Admin
     protected function configureShowField(ShowMapper $showMapper)
     {
         $showMapper
-
-          ->add('author')
-          ->add('subject')
-
-        ;
+          ->add('id')
+          ->add('user')
+          ->add('comment')
+          ->add('blog_id');
     }
 
     /**
@@ -54,17 +52,22 @@ class QuoteAdmin extends Admin
     {
         $listMapper
           ->addIdentifier('id')
-          ->add('author')
-          ->add('subject')
-          ->add('_action', 'actions', array(
+          ->add('user')
+          ->add('comment')
+          ->add('blog_id')
+          ->add(
+            '_action',
+            'actions',
+            array(
               'actions' => array(
                 'show' => array(),
                 'edit' => array(),
                 'delete' => array(),
               )
-            ))
-        ;
+            )
+          );
     }
+
     /**
      * @param \Sonata\AdminBundle\Datagrid\DatagridMapper $datagridMapper
      *
@@ -74,10 +77,11 @@ class QuoteAdmin extends Admin
     {
         $datagridMapper
           ->add('id')
-          ->add('author')
+          ->add('user')
           ->add('created')
-        ;
+          ->add('blog_id');
     }
+
     // setup the default sort column and order
     protected $datagridValues = array(
       '_sort_order' => 'ASC',

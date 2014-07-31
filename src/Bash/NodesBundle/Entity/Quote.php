@@ -194,4 +194,10 @@ class Quote
           )));
 
     }
+
+    public function __toString()
+    {
+        $string = (string) $this->getId();
+        return $string;
+    }
 }

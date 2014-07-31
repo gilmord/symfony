@@ -7,3 +7,9 @@ services:
         tags:
             - { name: sonata.admin, manager_type: orm, group: symblog, label: Quote }
         arguments: [null, Bash\NodesBundle\Entity\Quote, BashNodesBundle:QuoteAdmin]
+
+ blogger.symblog.admin.comment:
+        class: Bash\NodesBundle\Admin\CommentAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: symblog, label: Comments }
+        arguments: [null, Bash\NodesBundle\Entity\Comment,  BashNodesBundle:CommentAdmin]
