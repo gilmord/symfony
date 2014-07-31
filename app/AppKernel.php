@@ -23,13 +23,16 @@ class AppKernel extends Kernel
             //FOSUser Bundle
           new FOS\UserBundle\FOSUserBundle(),
           //Sonata
-          new Sonata\CoreBundle\SonataCoreBundle(),
-          new Sonata\BlockBundle\SonataBlockBundle(),
-          new Sonata\jQueryBundle\SonatajQueryBundle(),
+
+
+
+
+
+
+
+
           new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-          new Sonata\MediaBundle\SonataMediaBundle(),
-          new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
-          new Sonata\AdminBundle\SonataAdminBundle(),
+
           new Genemu\Bundle\FormBundle\GenemuFormBundle(),
           new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
 

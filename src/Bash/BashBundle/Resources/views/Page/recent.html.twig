@@ -6,6 +6,7 @@
 
 {% block h1 %}
     Recent
+
 {% endblock %}
 
 
@@ -14,7 +15,7 @@
         <li class="first leaf rss"><a
                     href="/bash.rss?token=WJieXgVAbka5rreCz9pd" title="">rss</a>
         </li>
-        <li class="leaf"><a href="{{ path('BashBashBundle_recent', { 'id': id }) }}" class="active">recent</a></li>
+        <li class="leaf"><a href="{{ path('BashBashBundle_recent', { 'id': 1 }) }}" class="active">recent</a></li>
         <li class="leaf"><a href="{{ path('BashBashBundle_best') }}">best</a></li>
         <li class="leaf"><a href="{{ path('BashBashBundle_random') }}">random</a></li>
         <li class="leaf"><a href="{{ path('BashBashBundle_govnokod') }}">govnokod</a></li>
@@ -28,6 +29,14 @@
 
 
 {% block content %}
+{% if id > pager.last%}
+    <strong>Sorry, there is no such page</strong>
+
+{% endif %}
+    {% if id < 1 %}
+        <strong>Sorry, there is no such page</strong>
+
+    {% endif %}
     {% for quote in quotes %}
         <div class="views-row views-row-1 views-row-odd views-row-first">
 
@@ -184,7 +193,7 @@
         </div>
     {% endblock %}
 
-    
+
 {% endblock %}
 
 

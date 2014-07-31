@@ -2,3 +2,8 @@ parameters:
 #    bash_nodes.example.class: Bash\NodesBundle\Example
 
 services:
+ blogger.symblog.admin.blog:
+        class: Bash\NodesBundle\Admin\QuoteAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: symblog, label: Quote }
+        arguments: [null, Bash\NodesBundle\Entity\Quote, BashNodesBundle:QuoteAdmin]

@@ -76,6 +76,7 @@ class PageController extends Controller
           )
         );
 
+
     }
 
     /**
@@ -83,8 +84,6 @@ class PageController extends Controller
      */
     public function bestAction()
     {
-
-
         return $this->render('BashBashBundle:Page:best.html.twig');
     }
 

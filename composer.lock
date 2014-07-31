@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f4c6092108ceb9ed06c62407a4929e77",
+    "hash": "a7877c43445bd4987fd7cd9e277f0652",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2171,12 +2171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "3fcdd68e38623651ad1619a8d5e30b22e0688cf6"
+                "reference": "ce64615821dcbc159d8775d834e31557ebbf79bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/3fcdd68e38623651ad1619a8d5e30b22e0688cf6",
-                "reference": "3fcdd68e38623651ad1619a8d5e30b22e0688cf6",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/ce64615821dcbc159d8775d834e31557ebbf79bc",
+                "reference": "ce64615821dcbc159d8775d834e31557ebbf79bc",
                 "shasum": ""
             },
             "require": {
@@ -2242,7 +2242,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2014-07-29 10:50:19"
+            "time": "2014-07-30 14:17:55"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2370,16 +2370,16 @@
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "2.2.6",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "9c2fc7ed49077024a258419e22d911d255274f4d"
+                "reference": "d0519c3f0d26d68df1c2c38196ab735d898a73ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/9c2fc7ed49077024a258419e22d911d255274f4d",
-                "reference": "9c2fc7ed49077024a258419e22d911d255274f4d",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/d0519c3f0d26d68df1c2c38196ab735d898a73ca",
+                "reference": "d0519c3f0d26d68df1c2c38196ab735d898a73ca",
                 "shasum": ""
             },
             "require": {
@@ -2415,13 +2415,12 @@
             ],
             "authors": [
                 {
-                    "name": "Thomas Rabaix",
-                    "email": "thomas.rabaix@sonata-project.org",
-                    "homepage": "http://sonata-project.org"
-                },
-                {
                     "name": "Sonata Community",
                     "homepage": "https://github.com/sonata-project/SonataCoreBundle/contributors"
+                },
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org"
                 }
             ],
             "description": "Symfony SonataCoreBundle",
@@ -2429,7 +2428,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2014-06-10 10:25:31"
+            "time": "2014-07-23 07:47:18"
         },
         {
             "name": "sonata-project/doctrine-extensions",
@@ -2782,12 +2781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMediaBundle.git",
-                "reference": "61d62cdbbde0b7d8060567b4c1456352945ff96c"
+                "reference": "83117cd83e58ae01eb84468deb358d2f16628e49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/61d62cdbbde0b7d8060567b4c1456352945ff96c",
-                "reference": "61d62cdbbde0b7d8060567b4c1456352945ff96c",
+                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/83117cd83e58ae01eb84468deb358d2f16628e49",
+                "reference": "83117cd83e58ae01eb84468deb358d2f16628e49",
                 "shasum": ""
             },
             "require": {
@@ -2859,7 +2858,7 @@
                 "vimeo",
                 "youtube"
             ],
-            "time": "2014-07-22 07:59:53"
+            "time": "2014-07-30 14:34:25"
         },
         {
             "name": "sonata-project/notification-bundle",
@@ -3598,6 +3597,7 @@
         "sonata-project/doctrine-orm-admin-bundle": 20,
         "sonata-project/jquery-bundle": 20,
         "sonata-project/media-bundle": 20,
+        "sonata-project/core-bundle": 20,
         "doctrine/migrations": 20,
         "doctrine/doctrine-migrations-bundle": 20,
         "stfalcon/tinymce-bundle": 20
