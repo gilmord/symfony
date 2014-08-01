@@ -5,11 +5,11 @@ services:
  blogger.symblog.admin.blog:
         class: Bash\NodesBundle\Admin\QuoteAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: symblog, label: Quote }
+            - { name: sonata.admin, manager_type: orm, group: Entities, label: Quote }
         arguments: [null, Bash\NodesBundle\Entity\Quote, BashNodesBundle:QuoteAdmin]
 
  blogger.symblog.admin.comment:
         class: Bash\NodesBundle\Admin\CommentAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: symblog, label: Comments }
+            - { name: sonata.admin, manager_type: orm, group: Entities, label: Comments }
         arguments: [null, Bash\NodesBundle\Entity\Comment,  BashNodesBundle:CommentAdmin]

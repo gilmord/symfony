@@ -30,8 +30,10 @@
         "doctrine/doctrine-migrations-bundle": "dev-master",
         "stfalcon/tinymce-bundle": "dev-master",
 
-        "friendsofsymfony/user-bundle": "~2.0@dev"
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "willdurand/propel-typehintable-behavior": "~1.0",
 
+        "bitgandtter/google-bundle": "*"
 
     },
     "require-dev": {

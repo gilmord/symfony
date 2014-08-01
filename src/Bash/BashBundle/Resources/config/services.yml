@@ -1,7 +1,8 @@
 parameters:
 #    bash_bash.example.class: Bash\BashBundle\Example
-
 services:
-    bash_bash.example:
-      class: Bash\BashBundle\Twig\BashExtensionExample
-
+ blogger.symblog.admin.user:
+        class: Bash\BashBundle\Admin\UserAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Users, label: Admin }
+        arguments: [null, Bash\BashBundle\Entity\User,  BashBashBundle:UserAdmin]

@@ -22,6 +22,8 @@ class AppKernel extends Kernel
           new Bash\NodesBundle\BashNodesBundle(),
             //FOSUser Bundle
           new FOS\UserBundle\FOSUserBundle(),
+         // new Willdurand\propel-typehintable-behavior(),
+
           //Sonata
 
 

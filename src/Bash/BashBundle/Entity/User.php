@@ -20,19 +20,15 @@ class User extends BaseUser
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="datetime")
      */
-    protected $name;
+    protected $created;
 
-    /**
-     * @ORM\Column(type="string", length=25)
-     */
-    protected $pass;
 
     public function __construct()
     {
         parent::__construct();
-
+        $this->setCreated(new \DateTime());
     }
 
     /**
@@ -46,48 +42,27 @@ class User extends BaseUser
     }
 
     /**
-     * Set name
+     * Set created
      *
-     * @param string $name
+     * @param \DateTime $created
      * @return User
      */
-    public function setName($name)
+    public function setCreated($created)
     {
-        $this->name = $name;
 
+        $this->created = $created;
         return $this;
     }
 
     /**
-     * Get name
+     * Get created
      *
-     * @return string 
+     * @return \DateTime
      */
-    public function getName()
+    public function getCreated()
     {
-        return $this->name;
+        return $this->created;
     }
 
-    /**
-     * Set pass
-     *
-     * @param string $pass
-     * @return User
-     */
-    public function setPass($pass)
-    {
-        $this->pass = $pass;
 
-        return $this;
-    }
-
-    /**
-     * Get pass
-     *
-     * @return string 
-     */
-    public function getPass()
-    {
-        return $this->pass;
-    }
 }

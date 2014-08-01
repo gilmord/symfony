@@ -18,7 +18,7 @@
         <li class="leaf"><a href="{{ path('BashBashBundle_addquote') }}">add quote</a></li>
         <li class="leaf"><a href="{{ path('BashBashBundle_addcode') }}" class="active">add code</a></li>
         <li class="leaf"><a href="{{ path('BashBashBundle_myquotes') }}">my quotes</a></li>
-        <li class="last leaf"><a href="/user/logout" title="">log out</a>
+        <li class="last leaf"><a href="{{ path('fos_user_security_logout') }}">log out</a>
         </li>
     </ul>
 {% endblock %}

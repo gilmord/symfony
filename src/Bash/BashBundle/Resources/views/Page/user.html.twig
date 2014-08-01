@@ -1,15 +1,12 @@
 {% extends '::base.html.twig' %}
 
 {% block title %}
-    Add quote
+    {{ user }} profile
 {% endblock %}
 
 {% block h1 %}
-
-        Create Quote
-
+    {{ user }} profile
 {% endblock %}
-
 
 
 {% block menu %}
@@ -21,7 +18,7 @@
         <li class="leaf"><a href="{{ path('BashBashBundle_best') }}">best</a></li>
         <li class="leaf"><a href="{{ path('BashBashBundle_random') }}">random</a></li>
         <li class="leaf"><a href="{{ path('BashBashBundle_govnokod') }}">govnokod</a></li>
-        <li class="leaf"><a href="{{ path('BashBashBundle_addquote') }}" class="active">add quote</a></li>
+        <li class="leaf"><a href="{{ path('BashBashBundle_addquote') }}">add quote</a></li>
         <li class="leaf"><a href="{{ path('BashBashBundle_addcode') }}">add code</a></li>
         <li class="leaf"><a href="{{ path('BashBashBundle_myquotes') }}">my quotes</a></li>
         <li class="last leaf"><a href="{{ path('fos_user_security_logout') }}">log out</a>
@@ -29,8 +26,24 @@
     </ul>
 {% endblock %}
 
-
-
 {% block content %}
-    {{ render(controller( 'BashBashBundle:Quote:new')) }}
+    <div class="profile">
+
+        <h3>
+
+            History
+
+        </h3>
+        <dl>
+            <dt>
+
+                Member since
+
+            </dt>
+            <dd>
+                {{ time.created |date('Y-m-d') }}
+            </dd>
+        </dl>
+
+    </div>
 {% endblock %}

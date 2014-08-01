@@ -9,7 +9,7 @@ use Bash\NodesBundle\Entity\Quote;
 use Bash\NodesBundle\Entity\Comment;
 use Bash\NodesBundle\Entity\Govnokod;
 use Bash\BashBundle\Form\AddForm;
-
+use Bash\NodesBundle\Entity\User;
 
 class PageController extends Controller
 {
@@ -62,17 +62,18 @@ class PageController extends Controller
             $arr[] = $i;
         }
         $last = count($arr);
+
         return $this->render(
           'BashBashBundle:Page:recent.html.twig',
           array(
             'quotes' => $quotes,
             'total' => $a,
-              'id' => $id,
-              'pager' => array(
-                  'count' => $count,
-                  'last' => $last,
-                   'arr' => $arr
-              )
+            'id' => $id,
+            'pager' => array(
+              'count' => $count,
+              'last' => $last,
+              'arr' => $arr
+            )
           )
         );
 
@@ -122,11 +123,12 @@ class PageController extends Controller
             $total = $qb->getSingleScalarResult();
             $a[$qId] = $total;
         }
+
         return $this->render(
           'BashBashBundle:Page:random.html.twig',
           array(
             'quotes' => $quotes,
-              'total' => $a
+            'total' => $a
           )
         );
 
@@ -190,7 +192,7 @@ class PageController extends Controller
             throw $this->createNotFoundException('404');
         }
 
-        $comments = $em->getRepository('Bash\NodesBundle\Entity\Comment', array('id'=>$id))
+        $comments = $em->getRepository('Bash\NodesBundle\Entity\Comment', array('id' => $id))
           ->getCommentsForBlog($quote->getId());
 
         return $this->render(
@@ -200,6 +202,37 @@ class PageController extends Controller
             'comment' => $comments,
           )
         );
+    }
+
+    public function userAction($user)
+    {
+
+
+        $em = $this->getDoctrine()
+          ->getManager();
+
+        $qb = $em->createQueryBuilder('q')
+          ->select('q.created')
+          ->from('Bash\BashBundle\Entity\User', 'q')
+          ->where('q.username = :user')
+          ->setParameter('user', $user)
+          ->getQuery()
+          ->getSingleResult();
+
+        if ($qb==false) {
+            throw $this->createNotFoundException('Не удается найти сообщение блога.');
+        } else {
+            return $this->render(
+              'BashBashBundle:Page:user.html.twig',
+              array(
+                'user' => $user,
+                'time' => $qb
+
+              ));
+
+        }
+
+
     }
 
 }

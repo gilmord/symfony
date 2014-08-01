@@ -36,7 +36,9 @@ class QuoteController extends Controller
         if ($form->isValid()) {
 
             //$quote->upload();
-            $quote->setAuthor('Gabriel');
+            $usr= $this->get('security.context')->getToken()->getUser();
+
+            $quote->setAuthor($usr->getUsername());
             $em = $this->getDoctrine()
               ->getManager();
 
@@ -51,7 +53,42 @@ class QuoteController extends Controller
 
 
     }
+    public function aquotesAction($author)
+    {
+        $usr = $this->get('security.context')->getToken()->getUser();
 
+
+//        if ($usr->getUsername() == $author) {
+//            return $this->render('BashBashBundle:Page:aquotes.html.twig');
+//        }
+//        else {
+
+
+        $em = $this->getDoctrine()
+          ->getManager();
+
+        $qb = $em->createQueryBuilder('c')
+          ->select('c')
+          ->from('Bash\NodesBundle\Entity\Quote', 'c')
+          ->where('c.author = :author')
+          ->addOrderBy('c.created')
+          ->setParameter('author', $author)
+          ->getQuery()
+          ->getResult();
+
+        return $this->render(
+          'BashBashBundle:Page:aquotes.html.twig',
+          array(
+            'quotes' => $qb,
+            'author' => $author
+          )
+        );
+
+
+        // }
+
+
+    }
 
 
 }

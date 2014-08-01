@@ -37,7 +37,8 @@ class CommentController extends Controller
         $form->submit($request->request->get($form->getName()));
 //
         if ($form->isValid()) {
-            $comment->setUser('Gabriel');
+            $usr= $this->get('security.context')->getToken()->getUser();
+            $comment->setUser($usr->getUsername());
             $em = $this->getDoctrine()
               ->getManager();
             $em->persist($comment);

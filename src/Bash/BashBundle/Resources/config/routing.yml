@@ -1,6 +1,6 @@
 # src/Bash/BashBundle/Resources/config/routing.yml
 BashBashBundle_recent:
-    pattern:  /{id}
+    pattern:  /recent/{id}
     defaults: { _controller: BashBashBundle:Page:recent }
     requirements:
         _method:  GET
@@ -37,7 +37,7 @@ BashBashBundle_addquote:
         _method:  POST|GET
 
 BashBashBundle_addcode:
-    pattern:  /add code
+    pattern:  /add_code
     defaults: { _controller: BashBashBundle:Page:addcode }
     requirements:
         _method:  GET
@@ -70,6 +70,18 @@ BashBashBundle_quote_create:
         _method:  POST|GET
         blog_id: \d+
 
+
+BashBashBundle_aquotes:
+    pattern:  /quotes/{author}
+    defaults: { _controller: BashBashBundle:Quote:aquotes }
+    requirements:
+        _method:  POST|GET
+
+BashBashBundle_user:
+    pattern:  /user/{user}
+    defaults: { _controller: BashBashBundle:Page:user }
+    requirements:
+        _method:  POST|GET
 
 
 
