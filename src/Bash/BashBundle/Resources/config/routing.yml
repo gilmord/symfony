@@ -84,6 +84,17 @@ BashBashBundle_user:
         _method:  POST|GET
 
 
+BashBashBundle_edit:
+    pattern:  /edit/{id}
+    defaults: { _controller: BashBashBundle:Page:edit }
+    requirements:
+        id:  \d+
+
+BashBashBundle_dell:
+    pattern:  /dell/{id}
+    defaults: { _controller: BashBashBundle:Page:dell }
+    requirements:
+        id:  \d+
 
 
 

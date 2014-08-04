@@ -25,8 +25,8 @@ class CommentAdmin extends Admin
         $formMapper
 
           ->add('user')
-          ->add('comment')
-          ->add('blog_id');
+          ->add('blog_id')
+          ->add('comment');
     }
 
     /**
@@ -60,7 +60,7 @@ class CommentAdmin extends Admin
             'actions',
             array(
               'actions' => array(
-                'show' => array(),
+              //  'show' => array(),
                 'edit' => array(),
                 'delete' => array(),
               )

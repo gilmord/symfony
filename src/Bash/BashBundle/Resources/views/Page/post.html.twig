@@ -1,7 +1,7 @@
 {% extends '::base.html.twig' %}
 
 {% block title %}
-
+    Qoute
 {% endblock %}
 
 {% block h1 %}
@@ -30,6 +30,50 @@
 
 
 {% block content %}
+    {%   if (you_are == 'adminuser') or (you_are == quote.author ) %}
+        {% block edittabs %}
+            <div class="tabs">
+
+                <h2 class="element-invisible"></h2>
+                <ul class="tabs primary">
+                    <li class="active">
+                        <a class="active" href="{{ path('BashBashBundle_post', { 'id': quote.id }) }}">
+
+                            View
+
+                <span class="element-invisible">
+
+                    (active tab)
+
+                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="{{ path('BashBashBundle_edit', { 'id': quote.id }) }}">
+
+                            Edit
+
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="{{ path('BashBashBundle_dell', { 'id': quote.id }) }}">
+
+                            Delete
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bash/node/179/rating">
+
+                            Voting results
+
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        {% endblock %}
+    {% endif %}
 
 
     <div id="node-179" class="node node-quote clearfix">
@@ -82,57 +126,25 @@
                         </div>
 
                     </div>
+
                     </p>
                 </div>
 
             </div>
         </div>
-    </div> <div class="field field-name-field-image field-type-image field-label-hidden">
+    </div>
 
-    <div class="field-items">
-        <div class="field-item even">
-            {% if quote.path %}
-                <img src="{{ asset(['image/', quote.path]|join) }}" alt="{{ quote.subject }} image not found" />
-            {% endif %}
+    <div class="field field-name-field-image field-type-image field-label-hidden">
+
+        <div class="field-items">
+            <div class="field-item even">
+                {% if quote.path %}
+                    <img src="{{ asset(['image/', quote.path]|join) }}" alt="{{ quote.subject }} image not found"/>
+                {% endif %}
+            </div>
         </div>
-    </div>
-
-</div>
-
-    <div class="tabs">
-
-        <h2 class="element-invisible"></h2>
-        <ul class="tabs primary">
-            <li class="active">
-                <a class="active" href="/bash/node/179">
-
-                    View
-
-                <span class="element-invisible">
-
-                    (active tab)
-
-                </span>
-                </a>
-            </li>
-            <li>
-                <a href="/bash/node/179/edit">
-
-                    Edit
-
-                </a>
-            </li>
-            <li>
-                <a href="/bash/node/179/rating">
-
-                    Voting results
-
-                </a>
-            </li>
-        </ul>
 
     </div>
-
 
 
 <div id="comments" class="comment-wrapper">
@@ -150,37 +162,39 @@
 
     <div class="comment clearfix">
 
-        <div class="submitted">
-            <a class="permalink" rel="bookmark" href="/bash/comment/87#comment-87">
+    <div class="submitted">
+        <a class="permalink" rel="bookmark" href="/bash/comment/87#comment-87">
 
-                Permalink
+            Permalink
 
-            </a>
+        </a>
 
-            Submitted by
+        Submitted by
 
-            <a class="username" title="View user profile." href="/bash/user/98">
+        <a class="username" title="View user profile." href="/bash/user/98">
 
-                {{ comments.user }}
+            {{ comments.user }}
 
-            </a>
+        </a>
 
-            on {{ comments.created|date('Y-m-d H:i') }}
+        on {{ comments.created|date('Y-m-d H:i') }}
 
-        </div>
-        <div class="content">
-            <div class="field field-name-comment-body field-type-text-long field-label-hidden">
-                <div class="field-items">
-                    <div class="field-item even">
-                        <p>
+    </div>
+    <div class="content">
+        <div class="field field-name-comment-body field-type-text-long field-label-hidden">
+            <div class="field-items">
+                <div class="field-item even">
+                    <p>
 
-                            {{ comments.comment }}
+                        {{ comments.comment }}
 
-                        </p>
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
+    {%   if (you_are == 'adminuser') %}
+    {% block editkeys %}
         <ul class="links inline">
             <li class="comment-delete first">
                 <a href="/bash/comment/87/delete">
@@ -204,54 +218,56 @@
                 </a>
             </li>
         </ul>
+    {% endblock %}
+        {% endif %}
+
+    {% endfor %}
+{% endblock %}
 
 
-        {% endfor %}
-        {% endblock %}
 
 
 
+    <h2 class="title comment-form">
 
+        Add new comment
 
-        <h2 class="title comment-form">
+    </h2>
 
-            Add new comment
+    {{ render(controller( 'BashBashBundle:Comment:new', { 'id': quote.id  } )) }}
 
-        </h2>
+    <form id="comment-form" class="comment-form" accept-charset="UTF-8" method="post"
+          action="/bash/comment/reply/179">
+        <div>
+            <div id="edit-author--2" class="form-item form-type-item">
+                <label for="edit-author--2">
 
-     {{ render(controller( 'BashBashBundle:Comment:new', { 'id': quote.id  } )) }}
+                    Your name
 
-        <form id="comment-form" class="comment-form" accept-charset="UTF-8" method="post"
-              action="/bash/comment/reply/179">
-            <div>
-                <div id="edit-author--2" class="form-item form-type-item">
-                    <label for="edit-author--2">
+                </label>
+                <a class="username" title="View user profile."
+                   href="{{ path('BashBashBundle_user', { 'user': you_are }) }}">
 
-                        Your name
+                    {{ you_are }}
 
-                    </label>
-                    <a class="username" title="View user profile." href="/bash/user/1">
-
-                        @todo:
-
-                    </a>
-                </div>
-                <div id="edit-comment-body"
-                     class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper">
-                    <div id="comment-body-add-more-wrapper">
-                        <div class="text-format-wrapper">
-                            <div class="form-item form-type-textarea form-item-comment-body-und-0-value"></div>
-                            <fieldset id="edit-comment-body-und-0-format"
-                                      class="filter-wrapper form-wrapper"></fieldset>
-                        </div>
+                </a>
+            </div>
+            <div id="edit-comment-body"
+                 class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper">
+                <div id="comment-body-add-more-wrapper">
+                    <div class="text-format-wrapper">
+                        <div class="form-item form-type-textarea form-item-comment-body-und-0-value"></div>
+                        <fieldset id="edit-comment-body-und-0-format"
+                                  class="filter-wrapper form-wrapper"></fieldset>
                     </div>
                 </div>
-
-                <div id="edit-actions" class="form-actions form-wrapper">
-
-                </div>
             </div>
-        </form>
+
+            <div id="edit-actions" class="form-actions form-wrapper">
+
+            </div>
+        </div>
+    </form>
     </div>
 
 

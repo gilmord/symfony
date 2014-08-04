@@ -10,7 +10,9 @@ use Bash\NodesBundle\Entity\Comment;
 use Bash\NodesBundle\Entity\Govnokod;
 use Bash\BashBundle\Form\AddForm;
 use Bash\NodesBundle\Entity\User;
-
+use Bash\NodesBundle\Form\QuoteType;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 class PageController extends Controller
 {
     /**
@@ -184,6 +186,7 @@ class PageController extends Controller
      */
     public function postAction($id)
     {
+        $usr = $this->get('security.context')->getToken()->getUser();
         $em = $this->getDoctrine()->getManager();
 
         $quote = $em->getRepository('Bash\NodesBundle\Entity\Quote')->find($id);
@@ -200,6 +203,7 @@ class PageController extends Controller
           array(
             'quote' => $quote,
             'comment' => $comments,
+            'you_are' => $usr->getUsername(),
           )
         );
     }
@@ -217,23 +221,107 @@ class PageController extends Controller
           ->where('q.username = :user')
           ->setParameter('user', $user)
           ->getQuery()
-          ->getSingleResult();
+          ->getOneOrNullResult();
 
-        if ($qb==false) {
-            throw $this->createNotFoundException('Не удается найти сообщение блога.');
+        if (!$qb) {
+            throw $this->createNotFoundException('No such user');
+
         } else {
+
             return $this->render(
               'BashBashBundle:Page:user.html.twig',
               array(
                 'user' => $user,
                 'time' => $qb
 
-              ));
+              )
+            );
 
         }
 
 
     }
+
+    public function editAction($id,  Request $request)
+    {
+        $usr = $this->get('security.context')->getToken()->getUser();
+
+       // $request = $this->get('request_stack')->getCurrentRequest();
+
+        $em = $this->getDoctrine()->getManager();
+        $quote = $em->getRepository('Bash\NodesBundle\Entity\Quote')->find($id);
+        if (!$quote) {
+            throw $this->createNotFoundException(
+              'No news found for id ' . $id
+            );
+        }
+
+        $form = $this->createFormBuilder($quote)
+          ->add('subject', 'textarea') //, array('value' => $quote->getSubject())
+          ->add('file', 'file', array('required' => false))
+          ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('BashBashBundle_post',  array(
+                  'id' => $quote->getId()
+                )));
+        }
+
+        //$build['form'] = $form->createView();
+
+        return $this->render(
+          'BashBashBundle:Quote:edit.html.twig',
+          array(
+            'user' => $usr->getUsername(),
+            'form' => $form->createView(),
+            'quote' => $quote,
+            'id' => $id,
+
+          )
+        );
+    }
+    public function dellAction($id, Request $request) {
+
+        $usr = $this->get('security.context')->getToken()->getUser();
+
+        $em = $this->getDoctrine()->getManager();
+        $quote = $em->getRepository('Bash\NodesBundle\Entity\Quote')->find($id);
+        if (!$quote) {
+            throw $this->createNotFoundException(
+              'No news found for id ' . $id
+            );
+        }
+
+        $form = $this->createFormBuilder($quote)
+          ->add('delete', 'submit')
+          ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $em->remove($quote);
+            $em->flush();
+            return $this->redirect($this->generateUrl('BashBashBundle_recent',  array(
+                  'id' => 1
+                )));
+        }
+
+        return $this->render(
+          'BashBashBundle:Quote:dell.html.twig',
+          array(
+            'user' => $usr->getUsername(),
+            'form' => $form->createView(),
+            'quote' => $quote,
+            'id' => $id,
+
+          )
+        );
+    }
+
 
 }
 

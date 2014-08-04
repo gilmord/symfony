@@ -20,7 +20,7 @@ class AddForm extends AbstractType
           ->add('download', 'genemu_jqueryfile')
           ->add('image', 'genemu_jqueryimage')
           ->add('rating', 'genemu_jqueryrating')
-         ->add('readonly_rating', 'genemu_jqueryrating', array(
+          ->add('readonly_rating', 'genemu_jqueryrating', array(
              'configs' => array(
                 'readOnly' => true
               )

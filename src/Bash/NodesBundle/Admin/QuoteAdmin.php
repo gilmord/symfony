@@ -62,7 +62,7 @@ class QuoteAdmin extends Admin
             'actions',
             array(
               'actions' => array(
-                'show' => array(),
+               // 'show' => array(),
                 'edit' => array(),
                 'delete' => array(),
               )
