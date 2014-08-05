@@ -20,7 +20,7 @@ class PageController extends Controller
      */
     public function recentAction($id)
     {
-        $perPage = 5;
+        $perPage = 20;
         $firstResult = $perPage * ($id - 1);
         $em = $this->getDoctrine()
           ->getManager();
@@ -105,7 +105,7 @@ class PageController extends Controller
           ->from('Bash\NodesBundle\Entity\Quote', 'b')
           ->addOrderBy('b.subject', 'ASC')
           ->setFirstResult(rand(0, count((array) $em) - 1))
-          ->setMaxResults(3)
+          ->setMaxResults(10)
           ->getQuery()
           ->getResult();
 
@@ -170,8 +170,34 @@ class PageController extends Controller
      */
     public function myquotesAction()
     {
-        return $this->render('BashBashBundle:Page:myquotes.html.twig');
+        $usr = $this->get('security.context')->getToken()->getUser();
+        $em = $this->getDoctrine()
+          ->getManager();
+
+        $qb = $em->createQueryBuilder('c')
+          ->select('c')
+          ->from('Bash\NodesBundle\Entity\Quote', 'c')
+          ->where('c.author = :author')
+          ->addOrderBy('c.created', 'DESC')
+          ->setParameter('author', $usr->getUsername())
+          ->getQuery()
+          ->getResult();
+
+        return $this->render(
+          'BashBashBundle:Page:myquotes.html.twig',
+          array(
+            'quotes' => $qb,
+            'user' => $usr->getUsername()
+          )
+        );
+
+
     }
+
+
+
+
+
 
     /**
      * @return \Symfony\Component\HttpFoundation\Response
@@ -257,7 +283,7 @@ class PageController extends Controller
         }
 
         $form = $this->createFormBuilder($quote)
-          ->add('subject', 'textarea') //, array('value' => $quote->getSubject())
+          ->add('subject', 'textarea')
           ->add('file', 'file', array('required' => false))
           ->getForm();
 
@@ -284,6 +310,7 @@ class PageController extends Controller
           )
         );
     }
+
     public function dellAction($id, Request $request) {
 
         $usr = $this->get('security.context')->getToken()->getUser();
@@ -297,7 +324,7 @@ class PageController extends Controller
         }
 
         $form = $this->createFormBuilder($quote)
-          ->add('delete', 'submit')
+          ->add('delete', 'submit', array('attr'=> array('class' => 'form-submit', 'id' => 'edit-submit')))
           ->getForm();
 
         $form->handleRequest($request);
@@ -313,11 +340,10 @@ class PageController extends Controller
         return $this->render(
           'BashBashBundle:Quote:dell.html.twig',
           array(
-            'user' => $usr->getUsername(),
-            'form' => $form->createView(),
-            'quote' => $quote,
             'id' => $id,
-
+            'user' => $usr->getUsername(),
+            'quote' => $quote,
+            'form' => $form->createView(),
           )
         );
     }

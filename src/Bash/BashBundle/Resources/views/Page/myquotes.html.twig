@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block h1 %}
-    My quotes
+    You can manage your quotes
 {% endblock %}
 
 
@@ -24,4 +24,124 @@
         <li class="last leaf"><a href="{{ path('fos_user_security_logout') }}">log out</a>
         </li>
     </ul>
+{% endblock %}
+
+
+{% block content %}
+
+
+
+    {% for quote in quotes %}
+<div>
+        <a href="{{ path('BashBashBundle_post', { 'id': quote.id }) }}">
+
+            #{{ quote.id }}
+
+        </a>
+
+        ->
+        <a href="{{ path('BashBashBundle_edit', { 'id': quote.id }) }}">
+
+            edit
+
+        </a>
+        |
+        <a href="{{ path('BashBashBundle_dell', { 'id': quote.id }) }}">
+
+            delete
+
+        </a>
+</div>
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+
+            <div class="views-field views-field-value">
+                <div class="field-content">
+                    <div id="rate-node-179-1-5"
+                         class="rate-widget-1 rate-widget clear-block rate-average rate-widg…e-9_phLrr7NVXFMouZITX0t-0JxNJMS1Jz_4IckdCuUy4 rate-processed">
+                <span id="rate-button-3" class="rate-button rate-number-up-down-btn-up">
+
+                    +
+
+                </span>
+
+                        <div class="rate-number-up-down-rating neutral">
+
+                            0
+
+                        </div>
+                <span id="rate-button-4" class="rate-button rate-number-up-down-btn-down">
+
+                    -
+
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class="views-field views-field-name">
+        <span class="field-content">
+
+            <a href="{{ path('BashBashBundle_aquotes', { 'author': user }) }}"> {{ quote.author }}</a>
+        </span>
+            </div>
+            <div class="views-field views-field-nid-1">
+                <a class="use-ajax bojan-link-179 bojans-count-0 ajax-processed" title="People bojaned: 0"
+                   href="/bash/bojan/179/nojs/set">
+
+                    [:|||:]
+
+                </a>
+            </div>
+            <div class="views-field views-field-comment-count">
+        <span class="views-label views-label-comment-count">
+
+</a>
+        </span>
+        <span class="field-content">
+            <a href="/bash/node/179"></a>
+        </span>
+            </div>
+            <div class="views-field views-field-created">
+        <span class="field-content">
+            {% if   "now"|date('Y-m-d') ==  quote.created|date('Y-m-d') %}
+                {{ quote.created|date('Y-m-d H:i') }}
+                <div id="hot"><strong>hot!</strong></div>
+            {% else %}
+                {{ quote.created|date('Y-m-d H:i') }}
+            {% endif %}
+        </span>
+            </div>
+            <div class="views-field views-field-nothing">
+        <span class="field-content">
+            <a href="{{ path('BashBashBundle_post', { 'id': quote.id }) }}">
+
+                #{{ quote.id }}
+
+            </a>
+        </span>
+            </div>
+            <div class="views-field views-field-body">
+                <div class="field-content">
+                    <p>
+
+                        {{ quote.subject }}
+
+                    </p>
+                </div>
+            </div>
+            <div class="views-field views-field-field-image">
+                <div class="field-content">
+                    {% if quote.path %}
+                        <img src="{{ asset(['image/', quote.path]|join) }}" alt="{{ quote.subject }} image not found"/>
+                    {% endif %}
+                </div>
+
+            </div>
+
+        </div>
+
+
+    {% endfor %}
+
+
+
 {% endblock %}

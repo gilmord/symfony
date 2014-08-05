@@ -1,16 +1,3 @@
-#security:
-   # providers:
-  #      in_memory:
- #           memory: ~
-#
-    #firewalls:
-   #     dev:
-  #          pattern: ^/(_(profiler|wdt)|css|images|js)/
- #           security: false
-#
- #       default:
-#            anonymous: ~
-# app/config/security.yml
 security:
     encoders:
         FOS\UserBundle\Model\UserInterface: sha512
@@ -36,16 +23,20 @@ security:
             anonymous:    true
 
     access_control:
-        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/register, role: ROLE_ADMIN }
-        - { path: ^/resetting, role: ROLE_ADMIN }
-        - { path: ^/admin/, role: ROLE_ADMIN }
+        - { path: ^/login$,    role: IS_AUTHENTICATED_ANONYMOUSLY }
 
-        - { path: ^/random, role: ROLE_USER }
-        - { path: ^/recent/, role: ROLE_USER }
-        - { path: ^/best, role: ROLE_USER }
+        - { path: ^/register,  role: ROLE_ADMIN }
+        - { path: ^/resetting, role: ROLE_ADMIN }
+        - { path: ^/admin/,    role: ROLE_ADMIN }
+
+        - { path: ^/random,    role: ROLE_USER }
+        - { path: ^/recent/,   role: ROLE_USER }
+        - { path: ^/best,      role: ROLE_USER }
         - { path: ^/add_quote, role: ROLE_USER }
-        - { path: ^/add_code, role: ROLE_USER }
-        - { path: ^/govnocod, role: ROLE_USER }
-        - { path: ^/quotes/, role: ROLE_USER }
-        - { path: ^/post/, role: ROLE_USER }
+        - { path: ^/add_code,  role: ROLE_USER }
+        - { path: ^/govnocod,  role: ROLE_USER }
+        - { path: ^/quotes/,   role: ROLE_USER }
+        - { path: ^/post/,     role: ROLE_USER }
+        - { path: ^/myquotes,  role: ROLE_USER }
+        - { path: ^/edit/,     role: ROLE_USER }
+        - { path: ^/dell/,     role: ROLE_USER }

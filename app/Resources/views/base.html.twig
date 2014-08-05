@@ -76,7 +76,7 @@
 <div id="site-header" class="clearfix">
     <div class="container-16">
         <div id="branding" class="grid-4 clearfix">
-            <span id="logo" class="grid-1 alpha"><a href="/" rel="home" title="Home" class="active"><img src="http://bash.drupalcompany.com/sites/default/files/logo_bash_0.png" alt="Home" title="Home" /></a></span>
+            <span id="logo" class="grid-1 alpha"><a href="{{ path('BashBashBundle_recent', { 'id': 1 }) }}" rel="home" title="Home" class="active"><img src="http://bash.drupalcompany.com/sites/default/files/logo_bash_0.png" alt="Home" title="Home" /></a></span>
         </div>
         <div id="header-region" class="grid-12 region clearfix">
             <div class="region region-header">
@@ -119,11 +119,14 @@
 
 {% block content %}
 
-    {% endblock %}
-    {% block comments %}
-    {% endblock %}
+{% endblock %}
 
-<div class="view-content">
+
+{% block comments %}
+
+{% endblock %}
+
+
 
 </div>
 </div>

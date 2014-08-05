@@ -31,12 +31,7 @@
 {% block content %}
     {% if (user == 'adminuser') or (user == quote.author) %}
 
-
-
-
-        <div id="main" class="column">
-
-            <div class="tabs">
+             <div class="tabs">
 
                 <h2 class="element-invisible"></h2>
                 <ul class="tabs primary">
@@ -77,7 +72,6 @@
                 </ul>
 
             </div>
-        </div>
 
 
         <form action="{{ path('BashBashBundle_dell', { 'id' : id } ) }}"
@@ -85,11 +79,11 @@
                 {{ form_enctype(form) }} >
             <div id="edit-actions" class="form-actions form-wrapper">
 
-                This action cannot be undone.
+                This action cannot be undone. <a href="{{ path('BashBashBundle_post', { 'id': quote.id}) }}">cancel</a>
+                <div id="edit-actions" class="form-actions form-wrapper">
+                    {{ form_widget(form) }}
+                </div>
 
-                {{ form_widget(form) }}
-
-                <a href="{{ path('BashBashBundle_post', { 'id': quote.id}) }}">cancel</a>
 
 
             </div>

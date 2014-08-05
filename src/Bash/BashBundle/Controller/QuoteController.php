@@ -71,7 +71,7 @@ class QuoteController extends Controller
           ->select('c')
           ->from('Bash\NodesBundle\Entity\Quote', 'c')
           ->where('c.author = :author')
-          ->addOrderBy('c.created')
+          ->addOrderBy('c.created', 'DESC')
           ->setParameter('author', $author)
           ->getQuery()
           ->getResult();

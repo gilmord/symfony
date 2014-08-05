@@ -90,6 +90,7 @@ BashBashBundle_edit:
     requirements:
         id:  \d+
 
+
 BashBashBundle_dell:
     pattern:  /dell/{id}
     defaults: { _controller: BashBashBundle:Page:dell }
@@ -97,5 +98,9 @@ BashBashBundle_dell:
         id:  \d+
 
 
-
+BashBashBundle_aquotes:
+    pattern:  /myquotes
+    defaults: { _controller: BashBashBundle:Quote:myquotes }
+    requirements:
+        _method:  POST|GET
 
