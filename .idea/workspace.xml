@@ -23,22 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="52" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="2016">
-              <folding>
-                <marker date="1407219380543" expanded="true" signature="2361:2515" placeholder="BashBashBundle_aquotes:" />
-                <marker date="1407219380543" expanded="true" signature="2474:2515" placeholder="requirements:" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/edit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="18.148148" vertical-offset="490" max-vertical-offset="1854">
+            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="490" max-vertical-offset="1854">
               <folding />
             </state>
           </provider>
@@ -47,7 +35,7 @@
       <file leaf-file-name="post.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/post.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="82" selection-start="318" selection-end="366" vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="5022">
+            <state line="17" column="82" selection-start="318" selection-end="366" vertical-scroll-proportion="-0.0" vertical-offset="306" max-vertical-offset="5022">
               <folding />
             </state>
           </provider>
@@ -56,10 +44,8 @@
       <file leaf-file-name="PageController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Controller/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="17" selection-start="5028" selection-end="5028" vertical-scroll-proportion="-14.518518" vertical-offset="3010" max-vertical-offset="6714">
-              <folding>
-                <element signature="e#137#194#0" expanded="true" />
-              </folding>
+            <state line="189" column="17" selection-start="5028" selection-end="5028" vertical-scroll-proportion="0.0" vertical-offset="3010" max-vertical-offset="6714">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,16 +53,43 @@
       <file leaf-file-name="myquotes.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/myquotes.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="83" selection-start="345" selection-end="400" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="2736">
+            <state line="28" column="0" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-14.666667" vertical-offset="108" max-vertical-offset="2736">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="8280" selection-end="8280" vertical-scroll-proportion="0.44071856" vertical-offset="1126" max-vertical-offset="2790">
+            <state line="37" column="0" selection-start="3381" selection-end="3381" vertical-scroll-proportion="-24.666666" vertical-offset="0" max-vertical-offset="1962">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/create.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="31" selection-start="217" selection-end="217" vertical-scroll-proportion="0.119337015" vertical-offset="0" max-vertical-offset="905">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/form.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="414">
               <folding />
             </state>
           </provider>
@@ -85,7 +98,7 @@
       <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+            <state line="23" column="0" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="846">
               <folding />
             </state>
           </provider>
@@ -94,16 +107,7 @@
       <file leaf-file-name="aquotes.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/aquotes.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="16" selection-start="1150" selection-end="4067" vertical-scroll-proportion="-27.37037" vertical-offset="1403" max-vertical-offset="2268">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuoteController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Controller/QuoteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="0" selection-start="1454" selection-end="2242" vertical-scroll-proportion="-27.185184" vertical-offset="850" max-vertical-offset="1728">
+            <state line="119" column="16" selection-start="1150" selection-end="4067" vertical-scroll-proportion="0.0" vertical-offset="1403" max-vertical-offset="2268">
               <folding />
             </state>
           </provider>
@@ -119,8 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Comment/form.html.twig" />
-        <option value="$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/qform.html.twig" />
         <option value="$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/qcreate.html.twig" />
         <option value="$PROJECT_DIR$/src/Bash/NodesBundle/Form/CommentType.php" />
         <option value="$PROJECT_DIR$/src/Bash/NodesBundle/Entity/Comment.php" />
@@ -169,7 +171,9 @@
         <option value="$PROJECT_DIR$/src/Bash/BashBundle/Controller/PageController.php" />
         <option value="$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/myquotes.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/create.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
       </list>
     </option>
   </component>
@@ -180,7 +184,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="-1855" />
     <option name="y" value="-1056" />
     <option name="width" value="1855" />
     <option name="height" value="1056" />
@@ -296,6 +300,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -685,6 +690,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Comment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -972,7 +981,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1034,7 +1042,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-1056" width="1855" height="1056" extended-state="6" />
+    <frame x="-1855" y="-1056" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1043,7 +1051,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28468767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28800443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1077,11 +1085,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../symfony/src/Blogger/BlogBundle/Form/CommentType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="905" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../symfony/src/Blogger/BlogBundle/Form/EnquiryType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="504" />
@@ -1094,9 +1097,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/NodesBundle/Form/QuoteType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="412" selection-end="511" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
+        <state line="16" column="1" selection-start="412" selection-end="511" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
@@ -1136,9 +1137,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/NodesBundle/Entity/Quote.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="21" selection-start="760" selection-end="767" vertical-scroll-proportion="-12.666667" vertical-offset="162" max-vertical-offset="6534">
-          <folding />
-        </state>
+        <state line="32" column="21" selection-start="760" selection-end="767" vertical-scroll-proportion="-12.666667" vertical-offset="162" max-vertical-offset="6534" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/best.html.twig">
@@ -1157,11 +1156,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="2919" column="0" selection-start="86484" selection-end="86484" vertical-scroll-proportion="0.0" vertical-offset="52383" max-vertical-offset="55548" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Entity/User.php">
@@ -1186,9 +1185,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/NodesBundle/Entity/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="7" selection-start="639" selection-end="639" vertical-scroll-proportion="1.3333334" vertical-offset="576" max-vertical-offset="2394">
-          <folding />
-        </state>
+        <state line="32" column="7" selection-start="639" selection-end="639" vertical-scroll-proportion="1.3333334" vertical-offset="576" max-vertical-offset="2394" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
@@ -1232,11 +1229,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/cache/dev/classes.map">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2534246" vertical-offset="2850" max-vertical-offset="3726" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/NodesBundle/Form/CommentType.php">
@@ -1271,75 +1268,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Form/AddForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="25" selection-start="573" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/create.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="15" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="198">
-          <folding />
-        </state>
+        <state line="20" column="25" selection-start="573" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="702" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="20" selection-start="6409" selection-end="6409" vertical-scroll-proportion="0.0" vertical-offset="3438" max-vertical-offset="5076">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="360" selection-end="418" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="414">
-          <folding />
-        </state>
+        <state line="191" column="20" selection-start="6409" selection-end="6409" vertical-scroll-proportion="0.0" vertical-offset="3438" max-vertical-offset="5076" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/dell.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="18" selection-start="2256" selection-end="2256" vertical-scroll-proportion="-36.666668" vertical-offset="324" max-vertical-offset="1854">
-          <folding />
-        </state>
+        <state line="73" column="18" selection-start="2256" selection-end="2256" vertical-scroll-proportion="-36.666668" vertical-offset="324" max-vertical-offset="1854" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="52" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="2016">
-          <folding>
-            <marker date="1407219380543" expanded="true" signature="2361:2515" placeholder="BashBashBundle_aquotes:" />
-            <marker date="1407219380543" expanded="true" signature="2474:2515" placeholder="requirements:" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Controller/QuoteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="1454" selection-end="2242" vertical-scroll-proportion="-27.185184" vertical-offset="850" max-vertical-offset="1728">
+        <state line="91" column="0" selection-start="1454" selection-end="2242" vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="1782">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Controller/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="17" selection-start="5028" selection-end="5028" vertical-scroll-proportion="-14.518518" vertical-offset="3010" max-vertical-offset="6714">
-          <folding>
-            <element signature="e#137#194#0" expanded="true" />
-          </folding>
+        <state line="189" column="17" selection-start="5028" selection-end="5028" vertical-scroll-proportion="0.0" vertical-offset="3010" max-vertical-offset="6714">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="18.148148" vertical-offset="490" max-vertical-offset="1854">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="490" max-vertical-offset="1854">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/aquotes.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="16" selection-start="1150" selection-end="4067" vertical-scroll-proportion="-27.37037" vertical-offset="1403" max-vertical-offset="2268">
+        <state line="119" column="16" selection-start="1150" selection-end="4067" vertical-scroll-proportion="0.0" vertical-offset="1403" max-vertical-offset="2268">
           <folding />
         </state>
       </provider>
@@ -1351,30 +1323,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/basecomment.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.5583816" vertical-offset="3078" max-vertical-offset="7740" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/myquotes.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="83" selection-start="345" selection-end="400" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="2736">
+        <state line="28" column="0" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-14.666667" vertical-offset="108" max-vertical-offset="2736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/create.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/post.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="82" selection-start="318" selection-end="366" vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="5022">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/basecomment.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.5583816" vertical-offset="3078" max-vertical-offset="7740">
+        <state line="17" column="82" selection-start="318" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="5022">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="8280" selection-end="8280" vertical-scroll-proportion="0.44071856" vertical-offset="1126" max-vertical-offset="2790">
+        <state line="37" column="0" selection-start="3381" selection-end="3381" vertical-scroll-proportion="-24.666666" vertical-offset="0" max-vertical-offset="1962">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="31" selection-start="217" selection-end="217" vertical-scroll-proportion="0.119337015" vertical-offset="0" max-vertical-offset="905">
           <folding />
         </state>
       </provider>

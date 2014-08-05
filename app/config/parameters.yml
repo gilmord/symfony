@@ -1,0 +1,17 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: symfony_bash
+    database_user: symfony_bash
+    database_password: 64924dd6b1a15391e9
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: e030ce79fa100da2f07011a9b15b3114f5ac2f71
+    debug_toolbar: true
+    debug_redirects: false
+    use_assetic_controller: true
