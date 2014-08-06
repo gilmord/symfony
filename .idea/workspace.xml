@@ -35,7 +35,7 @@
       <file leaf-file-name="post.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/post.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="82" selection-start="318" selection-end="366" vertical-scroll-proportion="-0.0" vertical-offset="306" max-vertical-offset="5022">
+            <state line="17" column="82" selection-start="318" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="5022">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="myquotes.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/myquotes.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-14.666667" vertical-offset="108" max-vertical-offset="2736">
+            <state line="28" column="0" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="2736">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="base.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="3381" selection-end="3381" vertical-scroll-proportion="-24.666666" vertical-offset="0" max-vertical-offset="1962">
+            <state line="37" column="0" selection-start="3381" selection-end="3381" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1962">
               <folding />
             </state>
           </provider>
@@ -71,7 +71,7 @@
       <file leaf-file-name="create.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/create.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
               <folding />
             </state>
           </provider>
@@ -80,7 +80,7 @@
       <file leaf-file-name="parameters.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="31" selection-start="217" selection-end="217" vertical-scroll-proportion="0.119337015" vertical-offset="0" max-vertical-offset="905">
+            <state line="7" column="28" selection-start="233" selection-end="233" vertical-scroll-proportion="0.13922653" vertical-offset="0" max-vertical-offset="905">
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
       <file leaf-file-name="form.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/form.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="414">
+            <state line="14" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="414">
               <folding />
             </state>
           </provider>
@@ -184,8 +184,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1855" />
-    <option name="y" value="-1056" />
+    <option name="x" value="1985" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
     <option name="height" value="1056" />
   </component>
@@ -300,7 +300,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -981,6 +980,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1042,7 +1042,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1855" y="-1056" width="1855" height="1056" extended-state="6" />
+    <frame x="1985" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1051,7 +1051,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28800443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29132116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1059,11 +1059,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18645833" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18645833" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1156,11 +1156,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2919" column="0" selection-start="86484" selection-end="86484" vertical-scroll-proportion="0.0" vertical-offset="52383" max-vertical-offset="55548" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2919" column="0" selection-start="86484" selection-end="86484" vertical-scroll-proportion="0.0" vertical-offset="52383" max-vertical-offset="55548" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Entity/User.php">
@@ -1229,11 +1229,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/cache/dev/classes.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2534246" vertical-offset="2850" max-vertical-offset="3726" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2534246" vertical-offset="2850" max-vertical-offset="3726" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/NodesBundle/Form/CommentType.php">
@@ -1283,16 +1283,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="52" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="2016">
-          <folding />
-        </state>
+        <state line="102" column="52" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="2016" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Controller/QuoteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="1454" selection-end="2242" vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="1782">
-          <folding />
-        </state>
+        <state line="91" column="0" selection-start="1454" selection-end="2242" vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="1782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Controller/PageController.php">
@@ -1330,14 +1326,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Page/myquotes.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-14.666667" vertical-offset="108" max-vertical-offset="2736">
+        <state line="28" column="0" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="2736">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bash/BashBundle/Resources/views/Quote/form.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="414">
+        <state line="14" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="414">
           <folding />
         </state>
       </provider>
@@ -1358,14 +1354,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="3381" selection-end="3381" vertical-scroll-proportion="-24.666666" vertical-offset="0" max-vertical-offset="1962">
+        <state line="37" column="0" selection-start="3381" selection-end="3381" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1962">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="217" selection-end="217" vertical-scroll-proportion="0.119337015" vertical-offset="0" max-vertical-offset="905">
+        <state line="7" column="28" selection-start="233" selection-end="233" vertical-scroll-proportion="0.13922653" vertical-offset="0" max-vertical-offset="905">
           <folding />
         </state>
       </provider>
